@@ -48,7 +48,7 @@ function randomSelect() {
 }
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag')
-    return tags[Math.floor(Math.random()*tags.length)]
+    return tags[Math.floor(Math.random()*tags.length-1)]
 }
 function highlightTag(randomTag) {
     randomTag.classList.add('highlight')
